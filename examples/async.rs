@@ -22,8 +22,8 @@ fn main() {
     task::block_on(task::spawn(async {
         let mut feed = Feed::default();
 
-        append(&mut feed, b"hello").await;
-        append(&mut feed, b"world").await;
+        append(&mut feed, b"").await;
+        append(&mut feed, b"").await;
         print(&mut feed).await;
     }));
 }
